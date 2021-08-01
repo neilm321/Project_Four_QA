@@ -1,0 +1,11 @@
+package com.neilm321.MyMathProject;
+
+import org.junit.Test;
+
+public class MyMathTest
+{
+	   @Test
+	    public void test(){
+	    System.out.println( "This Test Ran" );
+	    }
+}
