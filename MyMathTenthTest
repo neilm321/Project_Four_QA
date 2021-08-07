@@ -1,0 +1,86 @@
+package com.neilm321.MyMathProject;
+
+import java.util.Scanner;
+
+import org.junit.Test;
+
+import junit.framework.Assert;
+
+public class MyMath {
+	
+	int a;
+	int b;
+	
+		@Test
+		public void UI() {
+			
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter First Number Here:");
+		int a = in.nextInt();
+		
+		Assert.assertEquals("Enter First Number Here:", "Enter First Number Here:");
+	
+		System.out.println("Enter Second Number Here:");
+		int b = in.nextInt();
+		
+		Assert.assertEquals("Enter Second Number Here:", "Enter Second Number Here:");
+		
+		System.out.println("Press 1 to Add\nPress 2 to Subtract\nPress 3 to Multiply\nPress 4 to Divide");
+		int choice = in.nextInt();
+		
+		Assert.assertEquals("Press 1 to Add\\nPress 2 to Subtract\\nPress 3 to Multiply\\nPress 4 to Divide",
+				"Press 1 to Add\\nPress 2 to Subtract\\nPress 3 to Multiply\\nPress 4 to Divide");
+		
+		
+		if (choice == 1) {
+			myAdd(a, b);
+		System.out.println(MyMath.myAdd(a, b));
+		
+		Assert.assertTrue(true);
+		}
+		if (choice == 2) {
+			mySubtract(a, b);
+		System.out.println(MyMath.mySubtract(a, b));
+		
+		Assert.assertTrue(true);
+		}
+		if (choice == 3) {
+			myMultiply(a, b);
+		System.out.println(MyMath.myMultiply(a, b));
+		
+		Assert.assertTrue(true);
+		}
+    
+		Assert.assertTrue(true);
+		} 
+		in.close();
+		}
+		
+		}
+			
+	public static int myAdd(int a, int b) {
+		int c = a + b;
+		
+		Assert.assertFalse(false);
+		
+		return c;
+	}
+
+	public static int mySubtract(int a, int b) {
+		int c = a - b;
+		
+		Assert.assertFalse(false);
+		
+		return c;
+	}
+
+	public static int myMultiply(int a, int b) {
+		int c = a * b;
+		
+		Assert.assertFalse(false);
+		
+		return c;
+	}
+
+}
+
