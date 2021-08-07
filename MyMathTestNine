@@ -1,0 +1,80 @@
+package com.neilm321.MyMathProject;
+
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
+
+import junit.framework.Assert;
+
+
+
+public class MyMathTest
+{
+
+	public static void main(String[] args) {
+		
+		Result result1 = JUnitCore.runClasses(MyMath.class);
+		for (Failure fail : result1.getFailures()) {
+			System.out.println(fail.toString());
+		}
+		System.out.println(result1.wasSuccessful());
+		
+		Result result2 = JUnitCore.runClasses(MyMath.class);
+		for (Failure fail : result2.getFailures()) {
+			System.out.println(fail.toString());
+		}
+		System.out.println(result2.wasSuccessful());
+		
+		Result result3 = JUnitCore.runClasses(MyMath.class);
+		for (Failure fail : result3.getFailures()) {
+			System.out.println(fail.toString());
+		}
+		System.out.println(result3.wasSuccessful());
+	}
+
+		@Before
+	    public void test(){
+	    System.out.println( "This Test Ran" );
+	    
+	
+	    }
+	    @Test
+		public void testAdd() {
+
+			int a = 1;
+			int b = 2;
+			int addition = a + b;
+			Assert.assertTrue(addition == 3);
+			
+}
+	    @Test
+		public void testSubtract() {
+		
+	
+			int a = 1;
+			int b = 2;
+			int subtraction = a - b;
+			Assert.assertTrue(subtraction == -1);
+}
+	    @Test
+		public void testMultiply() {
+		
+			int a = 1;
+			int b = 2;
+			int multiplication = a * b;
+			Assert.assertTrue(multiplication == 2);
+		}
+	    @Test
+		public void testDivide() {
+
+			
+			int a = 1;
+			int b = 2;
+			int division = a / b;
+			Assert.assertTrue(division == 0);
+		}
+
+}
