@@ -1,0 +1,26 @@
+package com.neilm321.MyMathProject;
+
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
+
+import junit.framework.Assert;
+
+
+
+public class MyMathTest
+{
+
+	public static void main(String[] args) {
+		
+		Result result1 = JUnitCore.runClasses(MyMath.class);
+		for (Failure fail : result1.getFailures()) {
+			System.out.println(fail.toString());
+		}
+		System.out.println(result1.wasSuccessful());
+		
+		
+	}
+  
+  }
+  
