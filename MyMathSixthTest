@@ -37,20 +37,15 @@ public class MyMath {
 		System.out.println(MyMath.myAdd(a, b));
 		
 		Assert.assertTrue(true);	
-    }
-    Assert.assertTrue(true);
+		}
+    		Assert.assertTrue(true);
 		in.close();
-    }
+		}
 
-	public static int myAdd(int a, int b) {
+		public static int myAdd(int a, int b) {
 		int c = a + b;
 		
-		Assert.assertFalse(false);
-		
 		return c;
-	}
-
-
-
+		}
 }
 
