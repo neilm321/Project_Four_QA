@@ -114,6 +114,5 @@ public class MyMath {
 	public void setB(int b) {
 		this.b = b;
 	}
-
 }
 
