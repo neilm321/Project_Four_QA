@@ -12,7 +12,7 @@ public class MyMath {
 	int b;
   
 	@Test
-		public void UI() {
+	public void UI() {
 			
 		Scanner in = new Scanner(System.in);
 		System.out.println("Enter First Number Here:");
