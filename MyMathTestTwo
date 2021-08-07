@@ -7,7 +7,6 @@ import org.junit.runner.notification.Failure;
 import junit.framework.Assert;
 
 
-
 public class MyMathTest
 {
 
