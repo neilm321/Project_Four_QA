@@ -25,4 +25,5 @@ public class MyMathTest
 			System.out.println(fail.toString());
 		}
 		System.out.println(result3.wasSuccessful());
+		
 	}
