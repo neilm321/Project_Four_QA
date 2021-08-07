@@ -1,0 +1,26 @@
+package com.neilm321.MyMathProject;
+
+import java.util.Scanner;
+
+import org.junit.Test;
+
+import junit.framework.Assert;
+
+public class MyMath {
+	
+	int a;
+	int b;
+  
+	@Test
+		public void UI() {
+			
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter First Number Here:");
+		int a = in.nextInt();
+		
+		Assert.assertEquals("Enter First Number Here:", "Enter First Number Here:");
+		
+		Assert.assertEquals("Enter Second Number Here:", "Enter Second Number Here:");
+    
+    		in.close();
+		
