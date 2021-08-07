@@ -52,7 +52,7 @@ public class MyMath {
 		}
 		if (choice == 4) {
 			myDivide(a, b);
-			System.out.println(MyMath.myDivide(a, b));
+		System.out.println(MyMath.myDivide(a, b));
 			
 		Assert.assertTrue(true);
 		} 
@@ -85,12 +85,8 @@ public class MyMath {
 		return c;
 	}
 
-	public static int myDivide(int a, int b) {
-		int c = a / b;
-		
 		Assert.assertFalse(false);
-		
-		return c;
+
 	}
 
 }
