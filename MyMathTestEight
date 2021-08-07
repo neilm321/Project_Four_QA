@@ -35,35 +35,32 @@ public class MyMathTest
 		System.out.println(result3.wasSuccessful());
 	}
 
-		@Before
-	    public void test(){
+	    @Before
+	public void test(){
 	    System.out.println( "This Test Ran" );
 	    
 	
 	    }
 	    @Test
-		public void testAdd() {
-			int a = 1;
-			int b = 2;
-			int addition = a + b;
-			Assert.assertTrue(addition == 3);
-			
-}
-    @Test
-	public void testSubtract() {
-
-		
+	public void testAdd() {
 		int a = 1;
 		int b = 2;
-			int subtraction = a - b;
-			Assert.assertTrue(subtraction == -1);
+		int addition = a + b;
+		Assert.assertTrue(addition == 3);
+			
+}
+   	    @Test
+	public void testSubtract() {
+		int a = 1;
+		int b = 2;
+		int subtraction = a - b;
+		Assert.assertTrue(subtraction == -1);
 }
 	    @Test
-		public void testMultiply() {
-	
-			int a = 1;
-			int b = 2;
-			int multiplication = a * b;
-			Assert.assertTrue(multiplication == 2);
+	public void testMultiply() {
+		int a = 1;
+		int b = 2;
+		int multiplication = a * b;
+		Assert.assertTrue(multiplication == 2);
 		}
 }
