@@ -13,7 +13,6 @@ import junit.framework.Assert;
 
 public class MyMathTest
 {
-
 	public static void main(String[] args) {
 		
 		Result result1 = JUnitCore.runClasses(MyMath.class);
