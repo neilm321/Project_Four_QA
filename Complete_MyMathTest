@@ -1,0 +1,168 @@
+package com.neilm321.MyMathProject;
+
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
+
+import junit.framework.Assert;
+
+
+
+public class MyMathTest
+{
+
+	public static void main(String[] args) {
+		
+		Result result1 = JUnitCore.runClasses(MyMath.class);
+		for (Failure fail : result1.getFailures()) {
+			System.out.println(fail.toString());
+		}
+		System.out.println(result1.wasSuccessful());
+		
+		Result result2 = JUnitCore.runClasses(MyMath.class);
+		for (Failure fail : result2.getFailures()) {
+			System.out.println(fail.toString());
+		}
+		System.out.println(result2.wasSuccessful());
+		
+		Result result3 = JUnitCore.runClasses(MyMath.class);
+		for (Failure fail : result3.getFailures()) {
+			System.out.println(fail.toString());
+		}
+		System.out.println(result3.wasSuccessful());
+	}
+
+		@Before
+	    public void test(){
+	    System.out.println( "This Test Ran" );
+	    
+	
+	    }
+	    @Test
+		public void testAdd() {
+	    	Assert.assertEquals("Enter First Number Here:", "Enter First Number Here:");
+			
+			
+			Result result2 = JUnitCore.runClasses(MyMath.class);
+			for (Failure fail : result2.getFailures()) {
+				System.out.println(fail.toString());
+			}
+			System.out.println(result2.wasSuccessful());
+			
+			Result result3 = JUnitCore.runClasses(MyMath.class);
+			for (Failure fail : result3.getFailures()) {
+				System.out.println(fail.toString());
+			}
+			System.out.println(result3.wasSuccessful());
+			
+			Result result13 = JUnitCore.runClasses(MyMath.class);
+			for (Failure fail : result13.getFailures()) {
+				System.out.println(fail.toString());
+			}
+			System.out.println(result13.wasSuccessful());
+
+			int a = 1;
+			int b = 2;
+			int addition = a + b;
+			Assert.assertTrue(addition == 3);
+			
+}
+	    @Test
+		public void testSubtract() {
+			Result result4 = JUnitCore.runClasses(MyMath.class);
+			for (Failure fail : result4.getFailures()) {
+				System.out.println(fail.toString());
+			}
+			System.out.println(result4.wasSuccessful());
+			
+			Result result5 = JUnitCore.runClasses(MyMath.class);
+			for (Failure fail : result5.getFailures()) {
+				System.out.println(fail.toString());
+			}
+			System.out.println(result5.wasSuccessful());
+			
+			Result result6 = JUnitCore.runClasses(MyMath.class);
+			for (Failure fail : result6.getFailures()) {
+				System.out.println(fail.toString());
+			}
+			System.out.println(result6.wasSuccessful());
+
+			Result result14 = JUnitCore.runClasses(MyMath.class);
+			for (Failure fail : result14.getFailures()) {
+				System.out.println(fail.toString());
+			}
+			System.out.println(result14.wasSuccessful());
+			
+			int a = 1;
+			int b = 2;
+			int subtraction = a - b;
+			Assert.assertTrue(subtraction == -1);
+}
+	    @Test
+		public void testMultiply() {
+			Result result7 = JUnitCore.runClasses(MyMath.class);
+			for (Failure fail : result7.getFailures()) {
+				System.out.println(fail.toString());
+			}
+			System.out.println(result7.wasSuccessful());
+			
+			Result result8 = JUnitCore.runClasses(MyMath.class);
+			for (Failure fail : result8.getFailures()) {
+				System.out.println(fail.toString());
+			}
+			System.out.println(result8.wasSuccessful());
+			
+			Result result9 = JUnitCore.runClasses(MyMath.class);
+			for (Failure fail : result9.getFailures()) {
+				System.out.println(fail.toString());
+			}
+			System.out.println(result9.wasSuccessful());
+
+			Result result15 = JUnitCore.runClasses(MyMath.class);
+			for (Failure fail : result15.getFailures()) {
+				System.out.println(fail.toString());
+			}
+			System.out.println(result15.wasSuccessful());
+			
+			int a = 1;
+			int b = 2;
+			int multiplication = a * b;
+			Assert.assertTrue(multiplication == 2);
+		}
+	    @Test
+		public void testDivide() {
+			Result result10 = JUnitCore.runClasses(MyMath.class);
+			for (Failure fail : result10.getFailures()) {
+				System.out.println(fail.toString());
+			}
+			System.out.println(result10.wasSuccessful());
+			
+			Result result11 = JUnitCore.runClasses(MyMath.class);
+			for (Failure fail : result11.getFailures()) {
+				System.out.println(fail.toString());
+			}
+			System.out.println(result11.wasSuccessful());
+			
+			Result result12 = JUnitCore.runClasses(MyMath.class);
+			for (Failure fail : result12.getFailures()) {
+				System.out.println(fail.toString());
+			}
+			System.out.println(result12.wasSuccessful());
+
+			Result result16 = JUnitCore.runClasses(MyMath.class);
+			for (Failure fail : result16.getFailures()) {
+				System.out.println(fail.toString());
+			}
+			System.out.println(result16.wasSuccessful());
+			
+			int a = 1;
+			int b = 2;
+			int division = a / b;
+			Assert.assertTrue(division == 0);
+		}
+
+}
+
